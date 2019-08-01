@@ -7,9 +7,20 @@ menu:
     weight: 10
     parent: About the project
 ---
+## v1.7.13 [2019-08-01]
+
+### Bug Fixes
+
+- Fix scroll-to-row bug on table graphs.
+- Wrap inline commas in quotes to distinguish from CSV delimiters.
+- Fix TICKscript editor syntax coloring.
+- Fix JWK check when using login_id.
+- Fix dashboard typos.
+
+
 ## v1.7.12 [2019-06-20]
 
-## Bug Fixes
+### Bug Fixes
 - Clarify wording of PagerDuty v1 deprecation message
 - Requesting info from an unavailable source no longer causes the page to hang.
 - Create Chronograf user before CentOS installation.
