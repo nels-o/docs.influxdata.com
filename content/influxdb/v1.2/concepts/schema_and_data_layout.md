@@ -157,7 +157,7 @@ In general, shorter shard group durations allow the system to efficiently drop d
 When InfluxDB enforces an RP it drops entire shard groups, not individual data points.
 For example, if your RP has a duration of one day, it makes sense to have a shard group duration of one hour; InfluxDB will drop an hour worth of data every hour.
 
-If your RP's duration is greater than six months, there's no need to have a short shard group duration.
+If your RP's duration is greater than six months, typically you won't need a short shard group duration.
 In fact, increasing the shard group duration beyond the default seven day value can improve compression, improve write speed, and decrease the fixed iterator overhead per shard group.
 Shard group durations of 50 years and over, for example, are acceptable configurations.
 
